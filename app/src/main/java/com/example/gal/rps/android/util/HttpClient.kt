@@ -11,10 +11,11 @@ enum class HttpClient(private val port: Int) {
 	object KEYS {
 		val LOGIN = "login"
 		val serverAddress = "84.109.106.163"
+		val INVITE = "invite"
 	}
 
 	@SuppressLint("StaticFieldLeak")
-	fun sendRequest(endpoint: String, data: JSONObject, onPost: (JSONObject) -> Unit, onError: (JSONObject) -> Unit = { println(it) }) {
+	fun sendRequest(endpoint: String, data: JSONObject, onPost: (JSONObject) -> Unit = {}, onError: (JSONObject) -> Unit = { println(it) }) {
 		object : AsyncTask<Void, Void, JSONObject>() {
 			var commError = false
 			override fun doInBackground(vararg params: Void?): JSONObject {
