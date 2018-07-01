@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">RPS</string>
     <string name="enter_name">Enter your name</string>
+    <string name="random_rps">Random RPS</string>
+    <string name="done">Done</string>
+    <string name="oppReady">Opponent ready</string>
+    <string name="my_turn">My Turn</string>
+    <string name="oppTurn">Opponent\'s Turn</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.example.gal.rps.android.util
 
+import android.graphics.Color
 import android.view.View
 
 fun View.hide() {
@@ -13,3 +14,5 @@ fun View.show() {
 fun View.gone() {
 	this.visibility = View.GONE
 }
+
+val green = Color.parseColor("#ff008800")
